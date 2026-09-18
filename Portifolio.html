@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio - MyName</title>
+    <style>
+        /* Estilos CSS embutidos para facilitar a visualização. 
+           Se você já tem um style.css, pode mover isso para lá. */
+        
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Cabeçalho */
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.5em;
+        }
+
+        header h2 {
+            margin: 10px 0 0;
+            color: var(--secondary-color);
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+
+        /* Contatos com Hiperlinks */
+        .contato {
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        .contato a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .contato a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        .contato i {
+            margin-right: 5px;
+        }
+
+        /* Seções */
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h3 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
+
+        /* Experiência e Educação */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .item-header .titulo {
+            color: var(--primary-color);
+        }
+
+        .item-header .data {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .item-subtitulo {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        /* Habilidades */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #eef2f5;
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        /* Links em projetos */
+        .projeto a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .projeto a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            .item-header { flex-direction: column; }
+            .item-header .data { margin-top: 5px; }
+            .contato a { display: block; margin: 5px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- CABEÇALHO -->
+        <header>
+            <h1>MyName</h1>
+            <h2>Desenvolvedor Web | Entusiasta de Tecnologia</h2>
+            
+            <!-- HIPERLINKS DE CONTATO -->
+            <div class="contato">
+                <!-- Substitua pelo seu e-mail real -->
+                <a href="mailto:seu-email@exemplo.com">📧 seu-email@exemplo.com</a>
+                <!-- Substitua pelo seu LinkedIn -->
+                <a href="https://linkedin.com/in/seu-perfil" target="_blank">💼 LinkedIn</a>
+                <!-- Substitua pelo seu GitHub -->
+                <a href="https://github.com/marcoprais" target="_blank">💻 GitHub</a>
+                <!-- Substitua pela sua cidade -->
+                <span>📍 Belo Horizonte, Brasil</span>
+            </div>
+        </header>
+
+        <!-- RESUMO -->
+        <section>
+            <h3>Resumo Profissional</h3>
+            <p>
+                Profissional apaixonado por tecnologia e desenvolvimento de soluções web. 
+                Experiência em criação de páginas estáticas, automação de processos e 
+                versionamento de código com Git. Busco sempre aprender novas tecnologias 
+                e aplicar boas práticas de desenvolvimento.
+            </p>
+        </section>
+
+        <!-- EXPERIÊNCIA -->
+        <section>
+            <h3>Experiência Profissional</h3>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="titulo">Desenvolvedor Web Freelancer</span>
+                    <span class="data">2023 - Presente</span>
+                </div>
+                <div class="item-subtitulo">Autônomo</div>
+                <ul>
+                    <li>Criação de sites institucionais e portfólios utilizando HTML, CSS e JavaScript.</li>
+                    <li>Hospedagem e deploy de aplicações estáticas no GitHub Pages.</li>
+                    <li>Otimização de performance e SEO básico para pequenos negócios.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="titulo">Analista de Suporte Técnico</span>
+                    <span class="data">2021 - 2023</span>
+                </div>
+                <div class="item-subtitulo">Empresa Exemplo LTDA</div>
+                <ul>
+                    <li>Atendimento ao cliente e resolução de problemas técnicos.</li>
+                    <li>Documentação de processos internos e criação de tutoriais.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EDUCAÇÃO -->
+        <section>
+            <h3>Formação Acadêmica</h3>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="titulo">Tecnologia em Análise e Desenvolvimento de Sistemas</span>
+                    <span class="data">2022 - 2024</span>
+                </div>
+                <div class="item-subtitulo">Universidade Exemplo</div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section>
+            <h3>Habilidades Técnicas</h3>
+            <div class="skills">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Markdown</span>
+                <span class="skill-tag">Pacote Office</span>
+            </div>
+        </section>
+
+        <!-- PROJETOS COM HIPERLINKS -->
+        <section>
+            <h3>Projetos</h3>
+            
+            <div class="item projeto">
+                <div class="item-header">
+                    <span class="titulo">Página Pessoal no GitHub Pages</span>
+                    <span class="data">2024</span>
+                </div>
+                <p>
+                    Desenvolvimento do meu próprio site pessoal utilizando HTML e CSS, 
+                    hospedado gratuitamente no GitHub Pages. 
+                    <br>
+                    <!-- Hiperlink para o projeto -->
+                    <a href="https://marcoprais.github.io/" target="_blank">🔗 Ver projeto ao vivo</a>
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
